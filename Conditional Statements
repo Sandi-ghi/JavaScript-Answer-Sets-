@@ -9,3 +9,16 @@
     console.log("the number is zero")
   }
 </script>
+
+2. Answer
+<script>
+ let year = prompt ("enter the year")
+  if (year % 4 === 0 && year % 100 != 0 || (year % 400 === 0) ){
+    console.log(`${year} year is leap year`)
+    }  else if (year < 0 ){
+alert ( `${year} year is not valid`)
+    }else  {
+      console.log( `${year} year  is not leap year`)
+    }
+  
+</script>
