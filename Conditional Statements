@@ -1,0 +1,11 @@
+1. Answer
+<script>
+  let num = prompt("enter the number");
+  if (num > 0 ){
+    console.log("number is positive")
+  } else if (num < 0 ){
+    console.log( "the number is negative");
+  }else {
+    console.log("the number is zero")
+  }
+</script>
