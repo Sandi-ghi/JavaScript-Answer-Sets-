@@ -20,5 +20,37 @@ alert ( `${year} year is not valid`)
     }else  {
       console.log( `${year} year  is not leap year`)
     }
-  
+</script>
+
+3. Alreaddy solved in lession 
+
+4. Answer
+<script>
+ let num = prompt ("enter the number")
+   let result = (num % 2 === 0) ? " even" : "odd";
+    console.log(`the number is ${result} .`)
+</script>
+
+5. Answer 
+<script>
+function Calculate (num1, num2, Operator) {
+   if (Operator === "+") {
+   return num1 + num2 ;
+   }else if (Operator ===  "-"){
+    return num1 - num2 ;
+   }else if  (Operator === "*"){
+    return num1 * num2 ;
+   }else if  (Operator === "/" ){
+    return num1 / num2 ;
+   }else if (Operator != "+" || "-" || "*"|| "/"){
+    alert (`The "${Operator}"  Operator is not valid`)
+   }else {
+    console.log ("calculation eror")
+   }
+}
+console.log (Calculate (8,2, "+" ))
+console.log (Calculate (8,2, "-" ))
+console.log (Calculate (8,2, "*" ))
+console.log (Calculate (8,2, "/" ))
+console.log (Calculate (8,2, "=" ))
 </script>
