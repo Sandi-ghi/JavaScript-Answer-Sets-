@@ -33,7 +33,7 @@ function studentScore ( score ) {
         console.log (`your score ${score} is grade C`);
     }else if (score >= 61 && score <= 70){
         console.log (`your score ${score} is grade D`);
-    }else if (score >= 51 && score <= 50){
+    }else if (score >= 51 && score <= 60){
         console.log (`your score ${score} is grade E`);
     } else if ( score > 100 ) {
  console.log ("your score is beyond limit")
@@ -49,3 +49,23 @@ studentScore (77);
 studentScore (65);
 studentScore (54);
 studentScore (44);
+
+
+3. W A P JS program that prints a multiplication table from 1 to 5 using nested loops for loops.
+ ///// Answer ///// 
+for (let i= 1; i <= 5; i++ ){
+    let arr = " ";
+    for (let j=1; j<=5; j++){
+        arr += (i * j).toString().padEnd(4, );
+    }
+    console.log (arr)
+ }
+4. W A P to calculate sum of all even numbers between 1 to 50.
+
+///// Answer /////
+ let sum =  0;
+ for (let i = 0; i <= 50; i+=2){
+ 
+    sum += i;
+    }
+    console.log (sum);
