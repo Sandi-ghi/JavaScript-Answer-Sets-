@@ -1,0 +1,51 @@
+1.W A P ( write a program ) to check two numbers and return true if one of number is 100 or if the sum of two number is 100 else false.
+
+/////Answer/////
+<script>
+function twoNumbers (a,b) {
+ if (a + b == 100 || a == 100 || b == 100){
+    console.log ("true");
+ }else{
+    console.log ("false");
+ }
+    
+}
+twoNumbers(1,50);
+twoNumbers(100,50);
+twoNumbers(50,50);
+
+
+2. write a function that takes a score (0 - 100) and return the corrresponding grade.
+   . (91 - 100 )A
+   . (81 - 90 )A
+   . (71 - 80 )A
+   . (61 - 70 )A
+   . (51 - 60 )A
+   and fail below 50.
+
+/////Answer/////
+function studentScore ( score ) {
+    if (score >= 91 && score <= 100) {
+        console.log (`your score ${score} is grade A`);
+    }else if (score >= 81 && score <= 90){
+        console.log (`your score ${score} is grade B`);
+    }else if (score >= 71 && score <= 80){
+        console.log (`your score ${score} is grade C`);
+    }else if (score >= 61 && score <= 70){
+        console.log (`your score ${score} is grade D`);
+    }else if (score >= 51 && score <= 50){
+        console.log (`your score ${score} is grade E`);
+    } else if ( score > 100 ) {
+ console.log ("your score is beyond limit")
+    }else if (isNaN(score)){
+        alert (`your ${score} is not valid please enter a valid score`);
+    } else {
+console.log ("fail")
+    }
+} 
+studentScore (91);
+studentScore (86);
+studentScore (77);
+studentScore (65);
+studentScore (54);
+studentScore (44);
